@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require('telegraf')
 const consts = require('./consts')
 require('dotenv').config()
 
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const bot = new Telegraf('5306283267:AAFH5g27TD7G8_365x-h12KrIh9O5gYIPzg')
 bot.start((ctx) => ctx.replyWithHTML(`
 Привет, ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец'}!)
 Я помогу тебе выбрать и подключить подписку.
